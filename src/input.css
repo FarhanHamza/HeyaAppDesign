@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+  }
+
+:root{
+    --primaryColor : #1565D8;
+    --grape : 114,35,204;
+}
+.btn-primary{
+    @apply border border-white rounded-lg px-2 py-2 cursor-pointer font-semibold text-white;
+    
+    @apply hover:text-gray-950  hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+}
+.btn-secondary{
+    @apply border-2 border-secondary-default rounded-lg px-2 py-1 cursor-pointer font-semibold text-secondary-default;
+    @apply hover:text-white hover:bg-secondary-default 
+}
+
+.btn-secondary-dark{
+    @apply border-2 border-secondary-default rounded-lg px-2 py-1 cursor-pointer font-semibold bg-secondary-default text-white;
+    @apply  hover:bg-secondary-dark hover:border-secondary-dark;
+    @apply h-10;
+}
+
+.inputField{
+  @apply border border-secondary-light rounded-lg px-2 py-1 text-black;
+    @apply  focus:border-secondary-dark border focus:outline-none;
+    @apply h-10;
+}
+
+.badge{
+    @apply bg-secondary-light px-8 py-1 rounded-full uppercase font-bold
+}
+
+.badgeCard{
+    @apply bg-secondary-light px-8 py-1 rounded-full uppercase font-bold 
+}
+
+.card{ /* custom selector */
+  @apply bg-white rounded-2xl  overflow-hidden shadow-md relative;
+  @apply hover:shadow-2xl duration-500 cursor-pointer
+}
+
+.badges{
+  @apply rounded-full px-2 py-1 text-gray-600 bg-gray-100 text-sm font-bold uppercase absolute top-0 mt-2 ml-2;
+}
+
+.services>ul>li:nth-child(n+2){
+  @apply cursor-pointer;
+  @apply hover:text-secondary-defaultLight hover:underline;
+}
+
+.gradient{
+  /* background: rgb(24,59,86, 0.1);
+  background: linear-gradient(180deg, rgba(24,59,86,1) 1%, rgba(22,49,70,0.45) 45%, rgba(21,37,50,1) 100%); */
+
+
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#183b56+0,163146+36,152532+100&0.01+0,0.45+36,1+100 */
+/* background: linear-gradient(to bottom,  rgba(24,59,86,0.01) 0%,rgba(22,49,70,0.45) 36%,rgba(21,37,50,1) 100%); */
+
+
+}
+
+.glass {
+    backdrop-filter: blur(10px) saturate(0%);
+    -webkit-backdrop-filter: blur(10px) saturate(0%);
+    background-color: rgba(17, 25, 40, 0.69);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.glassBtn{
+    @apply border border-white rounded-lg px-2 py-1 cursor-pointer font-semibold text-white bg-[#22222290] hover:bg-white hover:text-black;
+}
+
+.search-container {
+    background-color: #FFF;
+    position: relative;
+    border-radius: 10px;
+    padding: 12px 50px 13px 50px;
+    background-image: url('img/searchicon.png');
+    background-position: 15px 22px; 
+    background-repeat: no-repeat;
+  }
+  .search-box {
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+    width: 100%;
+  }
+  .search-button {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    /* background-color: var(--primaryColor); */
+    @apply bg-secondary-default;
+    border-radius: 10px;
+    border: 0;
+    color: #FFF;
+    width: auto;
+    height: 40px;
+    outline: 0;
+    @apply border-2  rounded-lg px-5 py-2 font-semibold text-white
+  }

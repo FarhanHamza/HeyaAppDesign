@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlId">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heya- Hire us</title>
+    <link href="./output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+
+</head>
+
+<body class="!font-montserrat">
+    <div class="bg-primary-default w-full "> <!--bg-[url('img/Team.png')]-->
+        <div class="bg-[rgba(0,0,0,0.01)] py-7 px-5 lg:px-32 md:px-16 flex justify-between items-center text-white">
+            <!--navbar-->
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html"><img src="img/favicon/Logo.svg" alt=""></a>
+                    <!-- <h1 class="font-extrabold text-2xl flex items-center gap-1 justify-center"><a href="index.html">Heya</a>  <span><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5">
+                                <path
+                                    d="M15.98 1.804a1 1 0 0 0-1.96 0l-.24 1.192a1 1 0 0 1-.784.785l-1.192.238a1 1 0 0 0 0 1.962l1.192.238a1 1 0 0 1 .785.785l.238 1.192a1 1 0 0 0 1.962 0l.238-1.192a1 1 0 0 1 .785-.785l1.192-.238a1 1 0 0 0 0-1.962l-1.192-.238a1 1 0 0 1-.785-.785l-.238-1.192ZM6.949 5.684a1 1 0 0 0-1.898 0l-.683 2.051a1 1 0 0 1-.633.633l-2.051.683a1 1 0 0 0 0 1.898l2.051.684a1 1 0 0 1 .633.632l.683 2.051a1 1 0 0 0 1.898 0l.683-2.051a1 1 0 0 1 .633-.633l2.051-.683a1 1 0 0 0 0-1.898l-2.051-.683a1 1 0 0 1-.633-.633L6.95 5.684ZM13.949 13.684a1 1 0 0 0-1.898 0l-.184.551a1 1 0 0 1-.632.633l-.551.183a1 1 0 0 0 0 1.898l.551.183a1 1 0 0 1 .633.633l.183.551a1 1 0 0 0 1.898 0l.184-.551a1 1 0 0 1 .632-.633l.551-.183a1 1 0 0 0 0-1.898l-.551-.184a1 1 0 0 1-.633-.632l-.183-.551Z" />
+                            </svg>
+                        </span></h1> -->
+                </div>
+               
+            </div>
+            <div class="hidden md:block"> <!--w-auto-->
+                <ul class="flex justify-between items-center gap-5 font-semibold">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Landing Pages<span><svg class="inline-block w-5" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                <path fill-rule="evenodd"
+                                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </li>
+                    <li>Docs</li>
+                    <li>Help</li>
+                    <li class=""><button class="btn-primary"><a href="javascript:void(0);">Hire us</a></button></li>
+                    
+                </ul>
+            </div>
+
+            
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
+                <!--Humburger menu Icon -->
+                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                    class="w-5 h-5">
+                    <path fill-rule="evenodd"
+                        d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="flex gap-2">
+                <div class="cursor-pointer " id="nighModeClick">
+                    <svg class="w-10 text-purple-900 bg-white rounded-lg p-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M7.455 2.004a.75.75 0 0 1 .26.77 7 7 0 0 0 9.958 7.967.75.75 0 0 1 1.067.853A8.5 8.5 0 1 1 6.647 1.921a.75.75 0 0 1 .808.083Z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="cursor-pointer hidden" id="lightModeClick">
+                    <svg class="w-10 text-amber-500 bg-white rounded-lg p-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path d="M10 2a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 10 2ZM10 15a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 10 15ZM10 7a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM15.657 5.404a.75.75 0 1 0-1.06-1.06l-1.061 1.06a.75.75 0 0 0 1.06 1.06l1.06-1.06ZM6.464 14.596a.75.75 0 1 0-1.06-1.06l-1.06 1.06a.75.75 0 0 0 1.06 1.06l1.06-1.06ZM18 10a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 18 10ZM5 10a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 5 10ZM14.596 15.657a.75.75 0 0 0 1.06-1.06l-1.06-1.061a.75.75 0 1 0-1.06 1.06l1.06 1.06ZM5.404 6.464a.75.75 0 0 0 1.06-1.06l-1.06-1.06a.75.75 0 1 0-1.061 1.06l1.06 1.06Z" />
+                      </svg>
+                      
+                </div>
+            </div>
+
+
+        </div> <!--End of navbar-->
+
+         <!--Menus for Mobile-->
+     <div class="hidden bg-secondary-light py-5 mx-auto shadow-md"  id="mobileNavbar">
+        <div class="mx-12">
+            <ul class="text-sm mt-1 transition ease-out duration-300 space-y-3">
+                <li class="text-gray-700 font-bold py-1 border-b border-gray-300"><a href="index.html">Home</a></li>
+                <li class="text-gray-700 font-bold py-1 border-b border-gray-300 flex justify-between">Landing Pages
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                      
+                </li>
+                <li class="text-gray-700 font-bold py-1 border-b border-gray-300">Docs</li>
+                <li class="text-gray-700 font-bold py-1 border-b border-gray-300">Help</li>
+                <li class=""><button class="btn-secondary"><a href="hire-us.html">Hire us</a></button></li>
+            </ul>
+         </div>
+     </div>
+    <!--Menus for Mobile end-->
+
+    </div>
+
+    
+    
+    <div class="mx-12 md:mx-36">
+        <div class="max-w-lg mx-auto my-10">
+            <h2 class="text-center font-semibold text-primary-light underline">Collaboration on this design</h2>
+            <h2 class="text-center text-sm text-secondary-defaultLight before:content-[attr(before)]" before="˶">Teamwork can help you improve your communication, problem-solving, feedback, and project management skills, which are essential for any graphic designer. Teamwork can also expose you to different perspectives, styles, and techniques, which can inspire you to learn new things and expand your creative potential.</h2>
+        </div>
+
+        <!--Dev1-->
+        <div class="max-w-md mx-auto"><span class="bg-grape/30 px-2 py-1 rounded-lg">#01</span></div>
+        <div class="bg-white px-3 py-5 my-2 max-w-md  mx-auto space-y-4 card border-yellow-300 border-2 md:flex items-center justify-center gap-2">
+            <div class="">
+                <img src="img/Farhan.png" alt="dice" class="rounded-full mx-auto"> <!--h-[20px] sm:h-auto object-cover w-full--> 
+            </div>
+            <div class="px-2">
+                <h2 class="font-bold text-base md:text-xl  text-primary-default text-center">Farhan Hamza</h2>
+                <p class="text-gray-500 text-sm md:text-base font-semibold text-center">.NET Full Stack Developer</p>
+                <p class="text-gray-700 text-sm lg:text-base">Get insipiration from Figma design and try to finialize the design in Tailwind CSS.</p>
+
+                <div class="flex justify-center items-center mt-3">
+                    <button class="border rounded-full text-purple-800 px-3 py-1 
+                    cursor-pointer hover:bg-purple-800 hover:text-white hover:border-transparent 
+                     focus:outline-none focus:ring-1 ring-purple-800 ring-offset-2">Message</button>
+                </div>
+            </div>
+        </div> 
+   
+        <!--Dev2-->
+        <div class="max-w-md mx-auto mt-6"><span class="bg-purple-300 px-2 py-1 rounded-lg">#02</span></div>
+        <div class="bg-white px-3 py-5 my-2 max-w-md  mx-auto space-y-4 card border-yellow-300 border-2 md:flex items-center justify-center gap-2">
+            <div class="">
+                <img src="img/Tayyeb.png" alt="dice" class="rounded-full mx-auto"> 
+            </div>
+            <div class="px-2">
+                <h2 class="font-bold text-base md:text-xl  text-primary-default text-center">Tayyeb Hussain</h2>
+                <p class="text-gray-500 text-sm md:text-base font-semibold text-center">Web Developer</p>
+                <p class="text-gray-700 text-sm lg:text-base">Collaborate to build the Ui of this design using Tailwind CSS.</p>
+
+                <div class="flex justify-center items-center mt-3">
+                    <button class="border rounded-full text-purple-800 px-3 py-1 
+                    cursor-pointer hover:bg-purple-800 hover:text-white hover:border-transparent 
+                     focus:outline-none focus:ring-1 ring-purple-800 ring-offset-2">Message</button>
+                </div>
+            </div>
+        </div> 
+    </div> <!--End of mx-144px -->
+
+
+    <div class="">
+        <!--h-[20px] sm:h-auto object-cover w-full--> 
+    </div>
+
+
+    <div class="bg-primary-default mt-20 py-5 px-12 md:px-36 ">
+        <div class=" lg:flex justify-center items-center">
+            <div>
+                <h1 class="text-white font-bold text-2xl text-center">Get our stories delivered From us to your inbox
+                    weekly. </h1>
+                <div class="flex justify-center gap-2 mt-3">
+                    <input type="text" placeholder="Your Email" class="inputField md:w-auto w-[140px]">
+                    <button class="btn-secondary-dark text-sm sm:text-base">Get Started</button>
+                </div>
+                <h1 class="text-secondary-defaultLight font-light text-sm text-center mt-2">Get a response tomorrow if
+                    you
+                    submit by 9pm today.
+                    If we received after 9pm will get a response the following day.
+                </h1>
+            </div>
+
+            <div class="bg-white p-3 my-2 mx-auto rounded-2xl shadow-md w-2/5 space-y-2">
+                <div>
+                    <img src="img/card/Dice.png" alt="dice" class="rounded-2xl object-cover w-full h-[150px] sm:h-auto">
+                </div>
+                <div class="px-2">
+                    <h2 class="font-bold text-base md:text-xl  text-primary-default">The best articles every week</h2>
+                    <p class="text-gray-600 text-sm md:text-base">Our insurance plans offers are priced the same
+                        everywhere else.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="mt-4"> <!---->
+                <div class="font-extrabold text-2xl ">
+                    <img src="img/favicon/Logo.svg" alt="Logo" class="mx-auto">
+                </div>
+                <p class="text-secondary-defaultLight font-light text-sm text-center mt-2">
+                    Build a modern and creative
+                    website with crealand
+                </p>
+                <div class="flex justify-around sm:justify-center sm:gap-8 items-center my-2">
+                    <div><img src="img/favicon/twitter.svg" alt="twitter" class=""></div>
+                    <div><img src="img/favicon/linkedin.svg" alt="linkedin" class=""></div>
+                    <div><img src="img/favicon/instagram.svg" alt="instagram" class=""></div>
+                    <div><img src="img/favicon/google.svg" alt="google" class=""></div>
+                    <div><img src="img/favicon/youtube.svg" alt="youtube" class=""></div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap md:flex-none sm:justify-around my-10 gap-x-5 gap-y-6 services">
+                <ul class="text-secondary-midDark">
+                    <li class="font-bold text-secondary-defaultLight">Product</li>
+                    <li>Landing Page</li>
+                    <li>Features</li>
+                    <li>Documentations</li>
+                    <li>Referral Program</li>
+                    <li>Pricing</li>
+                </ul>
+                <ul class="text-secondary-midDark">
+                    <li class="font-bold text-secondary-defaultLight">Product</li>
+                    <li>Landing Page</li>
+                    <li>Features</li>
+                    <li>Documentations</li>
+                    <li>Referral Program</li>
+                    <li>Pricing</li>
+                </ul>
+                <ul class="text-secondary-midDark">
+                    <li class="font-bold text-secondary-defaultLight">Product</li>
+                    <li>Landing Page</li>
+                    <li>Features</li>
+                    <li>Documentations</li>
+                    <li>Referral Program</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
